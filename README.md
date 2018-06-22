@@ -18,7 +18,7 @@
 &nbsp; :large_orange_diamond: [Private properties using closures](#private) <br />
 &nbsp; :large_orange_diamond: [Understanding the difference between ‘==’ and ‘===’](#equal) <br />
 
-## :hash: Why JavaScript:
+## :hash: <a name="why">Why JavaScript</a>:
 &nbsp; :arrow_right: Why should I use JavaScript? :one:  we don’t have a choice :two: JavaScript is really good. It is lightweight and expressive. <br />
 &nbsp; :arrow_right: It is possible to get work done quickly with JavaScript without knowing much about the language, or even knowing much about programming. <br />
 &nbsp; :arrow_right: It is a language with enormous expressive power. <br />
