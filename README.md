@@ -5,6 +5,18 @@
 
 # Learning JavaScript
 
+## :top: Topics:
+&nbsp; :large_blue_diamond: [Function](#function) <br />
+&nbsp; :large_blue_diamond: [Object](#object) <br />
+&nbsp; :large_blue_diamond: [Prototypal Inheritance](prototype#) <br />
+&nbsp; :large_blue_diamond: [Closure/Lexical Scope](#closure) <br />
+&nbsp; :large_blue_diamond: [Variable & Function Hoisting](#hoisting) <br />
+&nbsp; :large_blue_diamond: [Understanding `this`](#this) <br />
+&nbsp; :large_blue_diamond: [The `apply`, `call`, and `bind` methods](#applycallbind) <br />
+&nbsp; :large_blue_diamond: [Immediately invoked function expressions (IIFE)](#IIFE) <br />
+&nbsp; :large_blue_diamond: [Private properties using closures](#private) <br />
+&nbsp; :large_blue_diamond: [Understanding the difference between ‘==’ and ‘===’](#equal) <br />
+
 ### Contributing
 If you like the project, shoot a :star2: and feel free to fork & send PR.
 
