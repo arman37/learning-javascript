@@ -6,6 +6,7 @@
 # Learning JavaScript
 
 ## :top: Topics:
+&nbsp; :large_orange_diamond: [Why JavaScript](#why) <br />
 &nbsp; :large_orange_diamond: [Function](#function) <br />
 &nbsp; :large_orange_diamond: [Object](#object) <br />
 &nbsp; :large_orange_diamond: [Prototypal Inheritance](prototype#) <br />
