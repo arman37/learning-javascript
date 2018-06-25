@@ -29,7 +29,7 @@
 :arrow_right: **Functions**, **loose typing**, **dynamic objects**, **expressive object literal notation** are some of the good parts of JS (except a programming model based on global variables). <br />
 
 ## :hash: <a name="hoisting">Variable & Function Hoisting</a>:
-In JavaScript, a variable or a function can be used before its been declared.
+In JavaScript, a **variable** or a **function** can be used before its been declared.
 Consider the Following code example:
 
 ```
@@ -42,8 +42,20 @@ function f() {
 
 var a;
 ```
-Why code works this way in JavaScript? Its because of the term **_Hoisting_**. JavaScript has a default behavior of moving all declared variables and functions to the top of the current scope of the **current script** or **current function**.
-**Note**: Functions declared with `var` keyword (`var f = function() {}`) are not hoisted though.
+Why code works this way in JavaScript? Its because of the term **_Hoisting_**. JavaScript has a default behavior of moving all declared variables and functions to the top of the current scope of the **current script** or **current function**. <br />
+**Note**: Functions declared with `var` keyword (`var f = function() {}`) are not hoisted and JavaScript only hoists variable declaration not initialization. <br />
+Consider the Following code example:
+
+```
+f();                     //  logs error "f is not a function"
+var f = function() {
+  //function body
+};
+
+var a;
+console.log(a);         // prints 'undefined' since variable initialization isn't moved to the top of scope.
+a = 10;
+```
 
 
 ### Contributing
