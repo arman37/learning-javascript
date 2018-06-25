@@ -42,12 +42,15 @@ function f() {
 
 var a;
 ```
-Why code works this way in JavaScript? Its because of the term **_Hoisting_**. JavaScript has a default behavior of moving all declared variables and functions to the top of the current scope of the **current script** or **current function**. <br />
-**Note**: Functions declared with `var` keyword (`var f = function() {}`) are not hoisted and JavaScript only hoists variable declaration not initialization. <br />
+Why code works this way in JavaScript? Its because of the term **_Hoisting_**. Before code execution, JavaScript has a default behavior of scanning and moving all declared variables and functions to the top of the current scope of the **current script** or **current function** called hoisting. <br />
+JavaScript code runs in two phases: :one: Declaration Phase :two: Execution Phase. <br />
+**Declaration Phase**: When JavaScript interpreter starts to run code from a script or function, first it scans for all variables and functions declared in that script or function and move them to the top of the scope but doesn't assign them any value yet. <br />
+**Execution Phase**: In this phase JavaScript interpreter starts to run code from top to bottom, line by line.
+**Note**: Functions declared with `var` keyword (`var f = function() {}`) are not hoisted and JavaScript only hoists variable declaration not assignment/initialization.
 Consider the Following code example:
 
 ```
-f();                     //  logs error "f is not a function"
+f();                     //  logs error 'f is not a function' since assignment isn't hoisted.
 var f = function() {
   //function body
 };
@@ -56,7 +59,11 @@ var a;
 console.log(a);         // prints 'undefined' since variable initialization isn't moved to the top of scope.
 a = 10;
 ```
-
+**Note**: Although with ES6 JavaScript offers block level scope, variables declared with `let` or `const` keyword are only hoisted to the top of the block not to the top of the script or function. <br />
+**Best Practice**:
+ - Always declare variables to the top of the function or script.
+ - Use function level `strict mode` to expose undeclared variables.
+ - Avoid using `var`, use `let` or `const` instead.
 
 ### Contributing
 If you like the project, shoot a :star2: and feel free to fork & send PR.
